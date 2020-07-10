@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onbuttonSend(View v){
        String s =  textView.getText().toString();
+       //토스트 사용
        final Toast toast = Toast.makeText(getApplicationContext(), s, Toast.LENGTH_LONG);
        toast.show();
        textView.setText("");
