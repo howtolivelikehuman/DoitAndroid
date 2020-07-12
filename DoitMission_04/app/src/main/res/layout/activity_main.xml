@@ -16,7 +16,7 @@
         android:gravity="center"
         android:hint="입력상자"
         android:padding="10dp"
-        android:textSize="30sp"
+        android:textSize="50dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.473"
@@ -29,7 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="519dp" />
+        app:layout_constraintGuide_begin="550dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -37,7 +37,6 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:gravity="right"
-        android:text="10 / 80 바이트"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
