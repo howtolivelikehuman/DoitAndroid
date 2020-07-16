@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
 
     EditText editText;
     TextView textView2;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
 
         editText.addTextChangedListener(new TextWatcher() {
             String beforeText;
-
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
                 beforeText = s.toString();
             }
@@ -75,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
         alert.setTitle("종료 알림창");
         alert.show();
     }
+
     public void onbuttonSend(View v){
        String s =  editText.getText().toString();
        //토스트 사용
