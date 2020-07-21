@@ -15,12 +15,14 @@ import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Locale;
 
 public class CustomerFragment extends Fragment {
     EditText editName;
     EditText editAge;
     Button editDate;
+
 
     Calendar myCalendar = Calendar.getInstance();
     DatePickerDialog.OnDateSetListener setDate= new DatePickerDialog.OnDateSetListener() {
@@ -41,6 +43,10 @@ public class CustomerFragment extends Fragment {
         editName = rootView.findViewById(R.id.editName);
         editAge = rootView.findViewById(R.id.editAge);
         editDate = rootView.findViewById(R.id.editDate);
+        Date currentTime = Calendar.getInstance().getTime();
+        editDate.setText(new SimpleDateFormat("YYYY/MM/dd",Locale.getDefault()).format(currentTime));
+
+
 
         editDate.setOnClickListener(new View.OnClickListener() {
             @Override

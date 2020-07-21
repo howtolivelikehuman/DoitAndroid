@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if(id == R.id.menu1){
             toolbar.setTitle("첫 번째 화면");
             getSupportFragmentManager().beginTransaction().replace(R.id.container,mainFragment).commit();
-        }
+    }
         else if(id == R.id.menu2){
             toolbar.setTitle("두 번째 화면");
             getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment2).commit();
