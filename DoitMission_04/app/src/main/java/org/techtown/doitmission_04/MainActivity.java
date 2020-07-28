@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         editText = (EditText) findViewById(R.id.textView);
         textView2 = (TextView) findViewById(R.id.textView2);
-
         editText.addTextChangedListener(new TextWatcher() {
             String beforeText;
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -51,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
         }
         return -1;
     }
-
     public void onbuttonClose(View v){
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
         builder.setMessage("정말로 종료하시겠습니까?");
@@ -73,7 +71,6 @@ public class MainActivity extends AppCompatActivity {
         alert.setTitle("종료 알림창");
         alert.show();
     }
-
     public void onbuttonSend(View v){
        String s =  editText.getText().toString();
        //토스트 사용

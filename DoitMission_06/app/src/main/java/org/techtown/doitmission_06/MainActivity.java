@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
         final EditText editText = findViewById(R.id.editText);
         //SeekBar Listener 구현
         SeekBar seekBar = (SeekBar) findViewById(R.id.seekBar);
-
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener(){
             public void onProgressChanged(SeekBar seekBar, int progress,
                                           boolean fromUser) {
@@ -33,9 +32,5 @@ public class MainActivity extends AppCompatActivity {
             public void onStopTrackingTouch(SeekBar seekBar) {
             }
         });
-    }
-
-    public void update(){
-
     }
 }

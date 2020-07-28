@@ -16,3 +16,5 @@ Do it Android programing (JAVA)
 2020.07.23 - Mission 13, 14
 
 2020.07.24 - Mission 15, 16
+
+2020.07.30 - Mission 17, 18
