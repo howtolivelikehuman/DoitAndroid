@@ -93,7 +93,6 @@ public class MainActivity extends AppCompatActivity implements AutoPermissionsLi
         });
     }
 
-
     class MyThread extends Thread{
         public void run(){
             //커서 얻기
