@@ -147,7 +147,7 @@ public class BestPaintBoard extends View {
 
     private Rect processMove(MotionEvent event){
         final float x = event.getX();
-        final float y = event. getY();
+        final float y = event.getY();
         final float dx = Math.abs(x-lastX);
         final float dy = Math.abs(y-lastY);
 

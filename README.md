@@ -22,3 +22,5 @@ Do it Android programing (JAVA)
 2020.07.31 - Mission 19, 20
 
 2020.08.01 - Mission 22
+
+2020.08.04 - Mission 23, 24
