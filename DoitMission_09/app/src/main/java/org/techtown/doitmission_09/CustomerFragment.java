@@ -25,6 +25,7 @@ public class CustomerFragment extends Fragment {
 
 
     Calendar myCalendar = Calendar.getInstance();
+    //기본값으로 오늘 날짜
     DatePickerDialog.OnDateSetListener setDate= new DatePickerDialog.OnDateSetListener() {
         @Override
         public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {
@@ -59,7 +60,7 @@ public class CustomerFragment extends Fragment {
         Button button = rootView.findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) {    //눌렀을 때 이름이 뜨게
                 String name = editName.getText().toString();
                 String age = editAge.getText().toString();
                 String date = editDate.getText().toString();
@@ -67,7 +68,7 @@ public class CustomerFragment extends Fragment {
                 if(name.length() < 1 | age.length() < 1 | date.length() < 1){
                     Toast.makeText(getContext(), "정보를 모두 입력하세요", Toast.LENGTH_LONG ).show();
                 }
-                else{
+                else{   //토스트 뜨게
                     Toast.makeText(getContext(), "이름 : " + name + " 나이 : " + age + " 생년월일 : "+ date, Toast.LENGTH_LONG).show();
                 }
             }
@@ -75,7 +76,7 @@ public class CustomerFragment extends Fragment {
         return rootView;
     }
 
-    public void updateDate(){
+    public void updateDate(){   //날짜 형식 변환
         String format = "YYYY/MM/dd";
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(format, Locale.KOREA);
         editDate.setText(simpleDateFormat.format(myCalendar.getTime()));

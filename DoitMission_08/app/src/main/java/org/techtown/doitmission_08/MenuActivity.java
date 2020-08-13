@@ -54,6 +54,9 @@ public class MenuActivity extends AppCompatActivity {
             setResult(MAIN_CODE_FROM_PRODUCT,intent);
             finish();
         }
+        if(requestCode ==MENU_CODE_FROM_MAIN) {
+            Toast.makeText(getApplicationContext(),"메인 -> 메뉴",Toast.LENGTH_LONG).show();
+        }
     }
 
     @Override

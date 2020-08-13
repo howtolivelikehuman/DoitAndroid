@@ -95,12 +95,10 @@ public class MainActivity extends AppCompatActivity {
         image.setThumbnail(bitmap);
     }
     public void getImage(String path, sampleimage image){
-        File file = new File(path);
         BitmapFactory.Options options = new BitmapFactory.Options();
         options.inSampleSize = 5;
-        Bitmap bit  = BitmapFactory.decodeFile(path);
-        bitmap = ThumbnailUtils.extractThumbnail(bit,100,100,ThumbnailUtils.OPTIONS_RECYCLE_INPUT);
-        image.setThumbnail(bitmap);
+        Bitmap bit  = BitmapFactory.decodeFile(path,options);
+        image.setThumbnail(bit);
     }
     //날짜 형식
     public void getDate(long time, sampleimage image){
