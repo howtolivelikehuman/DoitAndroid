@@ -1,5 +1,8 @@
-# Do_it_Android
-Do it Android programing (JAVA)
+# Do it Android programing (JAVA)
+
+## Problems and Solutions
+https://howtolivelikehuman.tistory.com/category/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%20%5BJAVA%5D
+
 
 2020.07.08 - Mission 01,02
 
